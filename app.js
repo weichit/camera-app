@@ -26,6 +26,7 @@ cameraTrigger.onclick = function() {
     cameraSensor.height = cameraView.videoHeight;
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("image/png");
+    console.log(cameraOutput.src);
     cameraOutput.classList.add("taken");
 };
 
